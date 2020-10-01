@@ -132,7 +132,7 @@ class List
         int count = 0;
 
         // Go thru all the nodes from head to tail
-        for (Node *current = head; current; current = current->next)
+        for (Node *current = head; !(current== NULL); current = current->next)
         {
             cout << current->value << endl;
             count++;
